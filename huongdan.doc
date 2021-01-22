@@ -1,0 +1,34 @@
+﻿Bài tập TodoListJS
+
+
+
+Tại ô input thêm task vào. (check rỗng, trùng task)
+Task thêm thành công sẽ có trạng thái là “todo” (đang làm)
+Khi action vào button check, sẽ chuyển trạng thái task “todo” thành “completed” (đã hoàn thành) và ngược lại.
+Task “todo” & “completed” sẽ được liệt kê ở 2 thẻ ul tại file index.html
+Xóa task
+
+Lưu ý: Bài tập này hơi thách thức tại chức năng check task. Vì khi check phải biết được id task để lấy thông tin chi tiết. Có thông tin chi tiết rồi sau đó mới update task được.
+Link demo mẫu bài mẫu: https://mediumstock.000webhostapp.com/todolist/index.html
+
+Hướng dẫn làm:
+Tạo file main.js
+Add Task
+Delete Task
+Change Status
+createTable
+setLocalStorage
+getLocalStorage
+Tạo lớp đối tượng Validation: handle phương thức: Kiểm tra rỗng & trùng tên task.
+Tạo lớp đối tượng Task: Handle các thuộc tính: 
+id (sử dụng hàm javascript Math.random() để cho id tự thay đổi),
+vd: var id = Math.random(); 
+taskName(tên task), 
+status (trạng thái: “todo” hoặc “completed”).
+Tạo lớp đối tượng TaskList: handle các thuộc tính & phương thức: 
+arr = [] 
+_findIndex (tìm vị trí theo id)
+addTask,
+deleteTask, 
+getTaskById (lấy thông tin task: gồm gồm các thuộc tính), 
+updateTask.
